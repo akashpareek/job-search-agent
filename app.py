@@ -1,6 +1,6 @@
 import streamlit as st
 
-from agent_setup import agent
+from agent_tools import search_jobs
 
 st.title("AI Job Search Agent")
 
@@ -10,6 +10,6 @@ query = st.text_input(
 
 if st.button("Search"):
 
-    response = agent.invoke({"input": query})
+    response = search_jobs.invoke(query)
 
-    st.write(response["output"])
+    st.write(response)

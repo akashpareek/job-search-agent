@@ -5,3 +5,4 @@ langchain-groq==0.1.4
 python-dotenv==1.0.1
 numpy==1.26.4
 textblob==0.18.0.post0
+pypdf==4.2.0
